@@ -73,7 +73,7 @@ print(f"AI: {response}")
 
 ### 启动对话
 ```bash
-python dialogue.py
+python test.py
 ```
 
 ## 训练自定义模型
