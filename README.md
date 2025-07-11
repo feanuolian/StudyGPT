@@ -30,12 +30,12 @@
 ### 环境准备
 
 ```bash
-# 创建Python环境（推荐3.10+）
-conda create -n tinydialogue python=3.10
+# 创建Python环境（3.12）
+conda create -n tinydialogue python=3.12
 conda activate tinydialogue
 
 # 安装依赖
-pip install torch torchtext tqdm
+pip install torch tqdm
 ```
 
 ### 交互式对话
@@ -54,21 +54,21 @@ tokenizer = Tokenizer().load_vocab("vocab.txt")
 
 # 进入对话模式
 while True:
-user_input = input("\n您: ")
-if user_input.lower() in ["exit", "quit", "bye"]:
-break
+  user_input = input("\n您: ")
+  if user_input.lower() in ["exit", "quit", "bye"]:
+  break
 
-# 生成响应
-response = generate_response(
-model=model,
-tokenizer=tokenizer,
-input_text=user_input,
-device=device,
-max_length=100,
-temperature=0.7
-)
+  # 生成响应
+  response = generate_response(
+  model=model,
+  tokenizer=tokenizer,
+  input_text=user_input,
+  device=device,
+  max_length=100,
+  temperature=0.7
+  )
 
-print(f"AI: {response}")
+  print(f"AI: {response}")
 ```
 
 ### 启动对话
