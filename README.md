@@ -21,6 +21,7 @@
 | 词表大小 | 10,000 |
 | 最大序列长度 | 256 |
 | 训练数据 | 小黄鸡50万对话语料 |
+##注
 **由于是在小黄鸡的数据集上训练，并未清晰数据，因此会出现对话短、话不雅、无前因后果的情况**
 ### 模型下载
 [ModelScope模型主页](https://www.modelscope.cn/models/fenuolian/StudyTinyModel/summary)
